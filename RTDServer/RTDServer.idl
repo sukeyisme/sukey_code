@@ -1,0 +1,36 @@
+// RTDServer.idl : RTDServer 的 IDL 源
+//
+
+// 此文件将由 MIDL 工具处理以
+// 产生类型库(RTDServer.tlb)和封送处理代码。
+
+import "oaidl.idl";
+import "ocidl.idl";
+
+[
+	object,
+	uuid(8CC5F8C3-7654-448C-BC23-00FE1D09F680),
+	dual,
+	nonextensible,
+	helpstring("IUMSRTDServer 接口"),
+	pointer_default(unique)
+]
+interface IUMSRTDServer : IDispatch{
+};
+[
+	uuid(3AFC8A2C-EDAE-439F-AFEF-F0850E2982A6),
+	version(1.0),
+	helpstring("RTDServer 1.0 类型库")
+]
+library RTDServerLib
+{
+	importlib("stdole2.tlb");
+	[
+		uuid(449546C3-2F5A-434D-9AB7-12C9DE98EA6F),
+		helpstring("UMSRTDServer Class")
+	]
+	coclass UMSRTDServer
+	{
+		[default] interface IUMSRTDServer;
+	};
+};

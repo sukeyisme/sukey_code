@@ -1,0 +1,33 @@
+﻿<customUI xmlns="http://schemas.microsoft.com/office/2006/01/customui" onLoad=" OnLoad" loadImage="OnGetImage">
+  <ribbon>
+    <tabs>
+      <tab id="UMSTab" label="UMSExcel Addin" insertAfterMso="TabAddIns">
+        <group id="UMSGroupData" label="数据">
+          <button id="UMSButtonInsertFormula" label="插入函数" size="large" image="insert" onAction="OnUMSButtonInsertFormulaClick"/>
+          <button id="UMSButtonHistory" label="历史行情" size="large" image="history" onAction="OnUMSButtonHistoryClick"/>
+          <button id="UMSButtonRealTime" label="实时行情" size="large" image="realtime" onAction="OnUMSButtonRealTimeClick"/>
+        </group>
+        <group id="UMSGroupTools" label="工具">
+          <menu id="UMSMenuReport" label="截面报表" size="large" image="report" >
+            <button id="UMSButtonWizzard" label="向导式"  image="wizzard" onAction="OnUMSButtonWizzardClick"/>
+            <button id="UMSButtonLR" label="左右式"  image="lr" onAction="OnUMSButtonLRClick" />
+          </menu>
+          <menu id="UMSMenuReportSnapshot" label="建立快照" size="large" image="shot">
+            <button id="UMSButtonSnapshotPage" label="工作表快照"  image="shot" onAction="OnUMSButtonSnapshotPageClick"/>
+            <button id="UMSButtonSnapshotFile" label="工作薄快照"  image="file" onAction="OnUMSButtonSnapshotFileClick" />
+          </menu>
+        </group>
+        <group id="UMSGroupRefresh" label="更新">
+          <menu id="UMSMenuRefresh" label="刷新所有工作薄" size="large" image="refresh">
+            <button id="UMSButtonRefreshSelected" label="刷新选中区域" image="selected" onAction="OnUMSButtonRefreshSelectedClick"/>
+            <button id="UMSButtonRefreshPage" label="刷新本页" image="page" onAction="OnUMSButtonRefreshPageClick"/>
+            <button id="UMSButtonRefreshFile" label="刷新整个文件" image="refresh" onAction="OnUMSButtonRefreshFileClick"/>
+          </menu>        
+        </group>
+        <group id="UMSGroupHelp" label="帮助">
+          <button id="UMSHelp" label="使用手册" size="large"  image="help" onAction="OnUMSHelpClick" screentip="使用手册"/>
+        </group>
+      </tab>
+    </tabs>
+  </ribbon>
+</customUI>

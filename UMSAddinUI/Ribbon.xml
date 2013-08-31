@@ -1,0 +1,12 @@
+﻿<customUI xmlns="http://schemas.microsoft.com/office/2006/01/customui">
+  <ribbon startFromScratch="false">
+    <tabs>
+      <tab id="psqTab" label="Stock Quotes" insertAfterMso="TabAddIns">
+        <group id="psqGroup" label="Stock Quotes">
+          <button id="psqUpdateButton" label="Update" imageMso="TableStyleRowHeaders" size="large" onAction="OnUpdateButtonClick" />
+          <button id="psqAboutButton" label="About" imageMso="HappyFace" size="large" onAction="OnAboutButtonClick" />
+        </group>
+      </tab>
+    </tabs>
+  </ribbon>
+</customUI>

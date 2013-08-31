@@ -1,0 +1,11 @@
+HKCR
+{
+	NoRemove AppID
+	{
+		'%APPID%' = s 'RTDServer'
+		'RTDServer.DLL'
+		{
+			val AppID = s '%APPID%'
+		}
+	}
+}

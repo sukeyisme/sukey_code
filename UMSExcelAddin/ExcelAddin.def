@@ -1,0 +1,12 @@
+LIBRARY	UMSEXCELADDIN.XLL
+
+EXPORTS
+	xlAutoOpen
+	xlAutoClose
+	xlAutoAdd
+	xlAutoRemove
+	xlAddInManagerInfo12
+	GetStockPrice
+	SelfServiceReport
+	GetStockInfo
+	

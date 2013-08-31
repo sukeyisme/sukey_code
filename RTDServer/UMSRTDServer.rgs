@@ -1,0 +1,26 @@
+HKCR
+{
+	RTDServer.UMSRTDServer.1 = s 'UMSRTDServer Class'
+	{
+		CLSID = s '{449546C3-2F5A-434D-9AB7-12C9DE98EA6F}'
+	}
+	RTDServer.UMSRTDServer = s 'UMSRTDServer Class'
+	{
+		CLSID = s '{449546C3-2F5A-434D-9AB7-12C9DE98EA6F}'
+		CurVer = s 'RTDServer.UMSRTDServer.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {449546C3-2F5A-434D-9AB7-12C9DE98EA6F} = s 'UMSRTDServer Class'
+		{
+			ProgID = s 'RTDServer.UMSRTDServer.1'
+			VersionIndependentProgID = s 'RTDServer.UMSRTDServer'
+			ForceRemove 'Programmable'
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			'TypeLib' = s '{3AFC8A2C-EDAE-439F-AFEF-F0850E2982A6}'
+		}
+	}
+}
